@@ -19,13 +19,13 @@
             <h1>Johannes Fog <br><span>Carport builder</span></h1>
             <i class="fa fa-bars" style='font-size: 28px; float: right; margin-right: 15px; margin-top: 15px; color: #163dab; cursor: pointer;'></i>
         </header>
-        <div id="main">
-            <h3>Velkommen til Johannes fog siden</h3>
-            <p>Detter er min egen version af Johannes Fog projektet der var til d. 29/5/2017.<br>
-            Opgaven var at lave en applikation der skulle generere nogle skitser ud fra nogle mål som brugeren havde valgt. Grunden til at jeg har lavet min egen version er fordi jeg gerne vil holde min kode evner
-            "up to dat" under den lange sommerferie.
-            </p>
-            <a class="forward" href="#">Videre til applikationen --></a>
+            <div class="content-box">
+                <h3>Velkommen til Johannes fog siden</h3>
+                <p>Detter er min egen version af Johannes Fog projektet der var til d. 29/5/2017.<br>
+                    Opgaven var at lave en applikation der skulle generere nogle skitser ud fra nogle mål som brugeren havde valgt. Grunden til at jeg har lavet min egen version er fordi jeg gerne vil holde min kode evner
+                    "up to dat" under den lange sommerferie.
+                </p>
+                <a class="forward" href="#">Videre til applikationen --></a>
         </div>
     </body>
 </html>
