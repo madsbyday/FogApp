@@ -5,7 +5,8 @@ package servlet;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import data.DataAccessImpl;
+import data.DataAccessObject;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -38,17 +39,29 @@ public class Servlet extends HttpServlet
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter())
+        // INIT
+        External ext = new External();
+        PrintWriter out = response.getWriter();
+        String cmd = request.getParameter("site");
+        String action = request.getParameter("action");
+        if (cmd != null)
         {
-           // when login button is pressed
-            
-           if (request.getParameter("action").equals("login"))
-           {
-                RequestDispatcher rd = request.getRequestDispatcher("/dashboard.jsp");
+            if (cmd.equals("index"))
+            {
+                RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
                 rd.forward(request, response);
-           }
+            }
+            if (cmd.equals("login"))
+            {
+                RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
+                rd.forward(request, response);
+            }
+            if (cmd.equals("login") && action.equals("check"))
+            {
+                ext.runlogin(request, response);
+            }
         }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -24,20 +24,20 @@ header {
     background-color: #0c2069;
     margin-bottom: 20px;
 }
-header > h1 {
+header > a > h1 {
     font-size: 24px;
     font-weight: 400;
     margin-left: 15px;
     margin-top: 0;
     color: #fff;
-    width: 150px;
     float: left;
 }
-header > h1 > span {
+header > a > h1 > span {
     position: absolute;
     top: 30px;
     font-size: 16px;
     color: #dcdcdc;
+    float: left;
 }
 /* content */
 .content-box {
@@ -57,6 +57,9 @@ header > h1 > span {
 .content-box > h2 {
     color: #636363;
     font-size: 26px;
+}
+h3 {
+    color: #636363;
 }
 .content-box > p {
     color: #636363;
@@ -92,13 +95,38 @@ i.fa.fa-bars:hover {
 }
 #login-form > #login-btn {
     margin-top: 50px;
-   width: 130px;
+    width: 130px;
     height: 35px;
     border-radius: 3px;
     border: 1px #b8b8b8 solid;
     cursor: pointer;
     float: left;
     background-color: #d8d8d8
+}
+
+/* dashboard */
+select.dropdown-create {
+    width: 300px;
+    height: 35px;
+    float: left;
+    clear: both;
+    margin-bottom: 15px;
+    padding-left: 3px;
+}
+label.label-dash {
+    clear: both;
+    float: left;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #636363;
+}
+#radio-box {
+    clear: both;
+    width: 400px;
+    float: left;
+}
+p#dash {
+    margin-bottom: 10px;
 }
 
 /* Links */
@@ -113,4 +141,10 @@ a#create-login {
     text-align: center;
     border-radius: 3px;
     background-color: #d8d8d8
+}
+a.icon-m > *{
+    color: #fff;
+}
+a.icon-m >:hover {
+    color: #d8d8d8;
 }
